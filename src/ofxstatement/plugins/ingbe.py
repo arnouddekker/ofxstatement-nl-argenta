@@ -13,8 +13,6 @@ class IngBePlugin(Plugin):
     def get_parser(self, filename):
         f = open(filename, 'r', encoding=self.settings.get("charset", "ISO-8859-1"))
         parser = IngBeParser(f)
-        #parser.statement.bank_id = "ING Belgium"
-        #parser.statement.bank_id = self.settings.get('bank', 'ING Belgium')
         return parser
 
 class IngBeParser(CsvStatementParser):
