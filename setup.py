@@ -4,16 +4,16 @@
 from setuptools import find_packages
 from distutils.core import setup
 
-version = "0.0.3"
+version = "0.1.0"
 
 with open('README.rst') as f:
     long_description = f.read()
 
 setup(name='ofxstatement-be-ing',
       version=version,
-      author="Theodore Marescaux",
-      author_email="theo.public@gmail.com",
-      url="https://github.com/TheoMarescaux/ofxstatement-be-ing",
+      author="Bernardo Bandos",
+      author_email="@hotmail.com",
+      url="https://github.com/jbbandos/ofxstatement-be-ing",
       description=("OFXStatement plugin for ING (Belgium)"),
       long_description=long_description,
       license="GPLv3",

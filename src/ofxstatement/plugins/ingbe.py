@@ -20,9 +20,9 @@ class IngBeParser(CsvStatementParser):
     date_format = "%d/%m/%Y"
     mappings = {
         'check_no': 3,
-        'date': 4,
+        'date': 5,
         'payee': 2,
-        'memo': 9,
+        'memo': 8,
         'amount': 6
     }
     
@@ -49,11 +49,15 @@ class IngBeParser(CsvStatementParser):
         """
         
         # Remove non CSV cr*p and zero-value notifications
-        if(line[5] and not (line[6]=="0" and line[7]=="0")):          
+        if(line[5] and not (line[6]=="0")):          
             transaction_id = line[3]
             date = line[4]
             date_value = line[5]
-            account_to = line[2]
+            if(line[2]):
+                account_to = line[2]
+            else:
+                account_to = line[8]
+		    	
             currency = line[7]
             line[6] = line[6].replace(",", ".")
             amount = line[6]
