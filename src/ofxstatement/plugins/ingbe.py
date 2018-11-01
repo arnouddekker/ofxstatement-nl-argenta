@@ -56,7 +56,7 @@ class IngBeParser(CsvStatementParser):
             if(line[2]):
                 account_to = line[2]
             else:
-                account_to = line[8]
+                account_to = ' '.join(line[8].split())
 		    	
             currency = line[7]
             line[6] = line[6].replace(",", ".")
@@ -64,7 +64,7 @@ class IngBeParser(CsvStatementParser):
 
             
             # Pack info in description
-            line[8] = line[8]+"-"+line[9]+"-"+line[10]
+            line[8] = ' '.join(line[8].split())+"-"+' '.join(line[9].split())+"-"+' '.join(line[10].split())
             description = line[8]
 
             stmtline = super(IngBeParser, self).parse_record(line)
