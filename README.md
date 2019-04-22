@@ -1,4 +1,4 @@
-# ofxstatement-be-ing     [![Build Status](https://travis-ci.com/jbbandos/ofxstatement-be-ing.svg?branch=master)](https://travis-ci.com/jbbandos/ofxstatement-be-ing.svg)
+# ofxstatement-be-ing     [![Build Status](https://travis-ci.com/jbbandos/ofxstatement-be-ing.svg?branch=master)](https://travis-ci.com/jbbandos/ofxstatement-be-ing.svg) (still missing unit tests, to be added when I have time)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ING Belgium plugin for ofxstatement 
