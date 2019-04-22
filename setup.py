@@ -1,8 +1,14 @@
 #!/usr/bin/python3
 """Setup
 """
+
+import os
+
 from setuptools import find_packages
+from setuptools.command.test import test as TestCommand
 from distutils.core import setup
+
+import unittest
 
 version = "0.1.1"
 
@@ -16,10 +22,12 @@ setup(name='ofxstatement-be-ing',
       url="https://github.com/jbbandos/ofxstatement-be-ing",
       description=("OFXStatement plugin for ING (Belgium)"),
       long_description=long_description,
+      long_description=open("README.md").read(),
+      long_description_content_type='text/markdown',
       license="GPLv3",
       keywords=["ofx", "banking", "statement"],
       classifiers=[
-          'Development Status :: 3 - Alpha',
+          'Development Status :: 4 - Beta',
           'Programming Language :: Python :: 3',
           'Natural Language :: English',
           'Topic :: Office/Business :: Financial :: Accounting',
@@ -35,6 +43,7 @@ setup(name='ofxstatement-be-ing',
           ['ingbe = ofxstatement.plugins.ingbe:IngBePlugin']
           },
       install_requires=['ofxstatement'],
+      extras_require={'test': ["freezegun", "pytest"]},
       include_package_data=True,
       zip_safe=True
       )
