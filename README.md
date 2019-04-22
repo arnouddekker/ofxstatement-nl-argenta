@@ -1,9 +1,7 @@
-# ofxstatement-be-ing
-
-[![Build Status](https://travis-ci.com/jbbandos/ofxstatement-be-ing.svg?branch=master).].(https://travis-ci.com/jbbandos/ofxstatement-be-ing.svg)
+# ofxstatement-be-ing     [![Build Status](https://travis-ci.com/jbbandos/ofxstatement-be-ing.svg?branch=master)](https://travis-ci.com/jbbandos/ofxstatement-be-ing.svg)
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# ING Belgium plugin for ofxstatement
+# ING Belgium plugin for ofxstatement 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This project provides a custom plugin for [ofxstatement](https://github.com/kedder/ofxstatement) for ING (BE). It is based
@@ -15,15 +13,12 @@ suitable for importing to GnuCash. Plugin for ofxstatement parses a
 particular proprietary bank statement format and produces common data
 structure, that is then formatted into an OFX file.
 
-.. _ofxstatement: https://github.com/kedder/ofxstatement
-
-
 Users of ofxstatement have developed several plugins for their banks. They are
-listed on main `ofxstatement`_ site. If your bank is missing, you can develop
+listed on main [`ofxstatement`](https://github.com/kedder/ofxstatement) site. If your bank is missing, you can develop
 your own plugin.
 
 ## Installation
-=====
+
 ### From PyPI repositories
 ```
 pip3 install ofxstatement-be-ing
@@ -36,5 +31,6 @@ python3 setup.py install
 ```
 
 ## Usage
-=====
+```
 $ ofxstatement convert -t ingbe input.csv output.ofx
+```
