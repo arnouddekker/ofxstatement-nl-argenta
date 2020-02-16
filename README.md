@@ -4,7 +4,7 @@
 # ING Netherlands plugin for ofxstatement 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-This project provides a custom plugin for [ofxstatement](https://github.com/kedder/ofxstatement) for ING (BE). It is based
+This project provides a custom plugin for [ofxstatement](https://github.com/kedder/ofxstatement) for ING (NL). It is based
 on the work done by TheoMarescaux (https://github.com/TheoMarescaux/ofxstatement-be-ing) and on the work done by
 jbbandos (https://github.com/jbbandos/ovxstatement-be-ing).
 
