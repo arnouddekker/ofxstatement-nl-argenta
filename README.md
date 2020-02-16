@@ -1,4 +1,4 @@
-# ofxstatement-be-ing 
+# ofxstatement-nl-ing 
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # ING Netherlands plugin for ofxstatement 
