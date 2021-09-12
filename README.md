@@ -5,7 +5,7 @@
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This project provides a custom plugin for [ofxstatement](https://github.com/kedder/ofxstatement) for Argenta (NL). It is based
-on the work done by TheoMarescaux (https://github.com/TheoMarescaux/ofxstatement-be-ing), jbbandos (https://github.com/jbbandos/ovxstatement-be-ing)
+on the work done by TheoMarescaux (https://github.com/TheoMarescaux/ofxstatement-be-ing), jbbandos (https://github.com/jbbandos/ofxstatement-be-ing)
 and on the work done by rhbvkleef (https://github.com/rhbvkleef/ofxstatement-ing-nl).
 
 `ofxstatement`_ is a tool to convert proprietary bank statement to OFX format,
