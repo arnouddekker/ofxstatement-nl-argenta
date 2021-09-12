@@ -19,9 +19,9 @@ class ArgentaNlParser(CsvStatementParser):
 
     date_format = "%d-%m-%Y"
     mappings = {
-        'trntype': 2,
         'date': 0,
         'amount': 1,
+        'trntype': 2,
         'payee': 4,
         'memo': 5,
     }
