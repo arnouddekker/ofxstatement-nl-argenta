@@ -22,6 +22,7 @@ class ArgentaNlParser(CsvStatementParser):
         'date': 0,
         'amount': 1,
         'trntype': 2,
+        'check_no': 3,
         'payee': 4,
         'memo': 5,
     }
