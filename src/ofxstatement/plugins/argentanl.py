@@ -38,6 +38,7 @@ class ArgentaNlParser(CsvStatementParser):
         stmt.account_id = None
         stmt.bank_id = None
         stmt.currency = "EUR"
+        stmt.self_id = None
 
         statement.recalculate_balance(stmt)
 
