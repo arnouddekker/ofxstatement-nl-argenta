@@ -64,6 +64,9 @@ class ArgentaNlParser(CsvStatementParser):
         elif line[2] in ["Credit"]:
             line[2] = "CREDIT"
 
+        if line[3] in [""]:
+            line[3] = "None"
+
         line[1] = line[1].replace(",", ".")
 
         return super().parse_record(line)
